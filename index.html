@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <section class="container bg-light mb-5">
+        <h1 class="text-warning text-center mb-4">Money Master</h1>
+        <div class="container overflow-hidden w-75">
+            <div class="row gx-5">
+                <div class="col">
+                    <div class="p-3 border rounded-3 bg-light">
+                        <h4 class="my-3 ">Income</h4>
+                        <p>Income: <input id="income-amount" class="px-2" type="text" placeholder="Enter Your Income">
+                        </p>
+
+                        <h4 class="my-3">Expenses</h4>
+                        <p>Food: <input id="food-expense" class="px-2" type="text"
+                                placeholder="Enter Your Food Expense"></p>
+
+                        <p>Rent: <input id="rent-expense" class="px-2" type="text"
+                                placeholder="Enter Your Rent Expense"></p>
+
+                        <p>Clothes: <input id="clothes-expense" class="px-2" type="text"
+                                placeholder="Enter Your Chothes Expense">
+                        </p>
+                        <button id="calculate-btn" class="btn btn-danger px-4">Calculate</button>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border rounded-3 bg-light">
+                        <div>
+                            <h3>Total Expenses: <span id="total-expenses">0</span></h3>
+
+                            <h3>Balance: <span id="balance">0</span></h3>
+                        </div>
+                        <div class="pb-5">
+                            <p>Save:
+                                <input id="saving-percent" class="px-2" placeholder="% Savings" type="text">
+                                <button id="saving-btn" class="btn btn-warning px-4">Save</button>
+                            </p>
+                            <h3>Saving Amount: <span id="saving-amount">0</span></h3>
+                            <h3>Remaining Balance: <span id="remaining-balance">0</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/utililties.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
